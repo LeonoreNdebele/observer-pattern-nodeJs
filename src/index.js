@@ -27,6 +27,7 @@ app.post("/", (req, res) => {
 })
 
 // Endpoint: Get all resources
+
 app.get("/", (req, res) => {
 	db.all(`SELECT * FROM resources`, [], (err, rows) => {
 		if (err) {
